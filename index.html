@@ -1,0 +1,31 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Fira+Sans:300,400,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <section id="gameover">
+      <h1>Spelet slut!</h1>
+      <button class="retry">En gång till!</button>
+    </section>
+    <header>
+      <p>Poäng: <span class="score">0</span></p>
+      <p>Försök kvar: <span class="attempts">3</span></p>
+    </header>
+    <main>
+      <section id="placeholder" class="placeholder"></section>
+      <p class="left">52 kort kvar</p>
+    </main>
+    <nav>
+      <a href="#" id="lower" onclick="draw()">Nästa kort är <b>lägre</b></a>
+      <a href="#" id="equal" onclick="draw()">Nästa kort är <b>likvärdig</b></a>
+      <a href="#" id="higher" onclick="draw()">Nästa kort är <b>högre</b></a>
+    </nav>
+    <script src="index.js"></script>
+  </body>
+</html>
